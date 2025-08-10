@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Coding Club - Registration</title>
+  
+</head>
+<body>
+    <!-- Semantic Header -->
+    <header>
+        <h1>Student Coding Club</h1>
+        <p>Learn, Code, Create - Together!</p>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- Section with Lists -->
+        <section>
+            <h2>Why Join Our Coding Club?</h2>
+            
+            <h3>Benefits of Membership:</h3>
+            <ul>
+                <li>Free workshops on web development</li>
+                <li>Collaborative coding projects</li>
+                <li>Access to learning resources</li>
+                <li>Guest lectures from industry professionals</li>
+                <li>Participation in hackathons</li>
+            </ul>
+            
+            <h3>Learning Path:</h3>
+            <ol>
+                <li>HTML & CSS Fundamentals</li>
+                <li>JavaScript Programming</li>
+                <li>Responsive Web Design</li>
+                <li>Backend Development</li>
+                <li>Project Deployment</li>
+            </ol>
+        </section>
+        
+        <!-- Section with Table -->
+        <section>
+            <h2>Weekly Schedule</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>4:00-5:30 PM</td>
+                        <td>HTML/CSS Workshop</td>
+                        <td>Computer Lab A</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>4:30-6:00 PM</td>
+                        <td>JavaScript Study Group</td>
+                        <td>Library Media Center</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>3:00-5:00 PM</td>
+                        <td>Project Collaboration</td>
+                        <td>Innovation Hub</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Section with Media -->
+        <section>
+            <h2>Club Activities</h2>
+            
+            <div class="media-container">
+                <div class="media-item">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&h=250" alt="Coding Workshop">
+                    <p>Weekly Coding Workshops</p>
+                </div>
+                <div class="media-item">
+                    <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=400&h=250" alt="Hackathon Event">
+                    <p>Annual Hackathon Event</p>
+                </div>
+                <div class="media-item">
+                    <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=400&h=250" alt="Group Project">
+                    <p>Collaborative Projects</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Form Section -->
+        <section>
+            <h2>Join the Coding Club</h2>
+            <p>Fill out the form below to become a member:</p>
+            
+            <form action="#" method="post">
+                <!-- Text Input with Placeholder -->
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" 
+                           placeholder="Enter your full name" required>
+                </div>
+                
+                <!-- Email Input with Autocomplete -->
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" 
+                           placeholder="student@example.com" required
+                           autocomplete="email">
+                </div>
+                
+                <!-- Password Input -->
+                <div class="form-group">
+                    <label for="password">Create Password:</label>
+                    <input type="password" id="password" name="password" 
+                           required minlength="8"
+                           placeholder="At least 8 characters">
+                </div>
+                
+                <!-- Readonly Field -->
+                <div class="form-group">
+                    <label for="studentid">Student ID:</label>
+                    <input type="text" id="studentid" name="studentid" 
+                           value="S20230001" readonly>
+                </div>
+                
+                <!-- Number Input -->
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" 
+                           min="16" max="25" required
+                           placeholder="16-25">
+                </div>
+                
+                <!-- Date Input -->
+                <div class="form-group">
+                    <label for="birthdate">Birth Date:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                
+                <!-- Radio Buttons -->
+                <div class="form-group">
+                    <label>Experience Level:</label>
+                    <div>
+                        <input type="radio" id="beginner" name="experience" value="beginner" required>
+                        <label for="beginner">Beginner</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="intermediate" name="experience" value="intermediate">
+                        <label for="intermediate">Intermediate</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="advanced" name="experience" value="advanced">
+                        <label for="advanced">Advanced</label>
+                    </div>
+                </div>
+                
+                <!-- Checkboxes -->
+                <div class="form-group">
+                    <label>Interests (select all that apply):</label>
+                    <div>
+                        <input type="checkbox" id="frontend" name="interests" value="frontend">
+                        <label for="frontend">Frontend Development</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="backend" name="interests" value="backend">
+                        <label for="backend">Backend Development</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="design" name="interests" value="design">
+                        <label for="design">UI/UX Design</label>
+                    </div>
+                </div>
+                
+                <!-- Select Dropdown -->
+                <div class="form-group">
+                    <label for="year">Current Year:</label>
+                    <select id="year" name="year" required>
+                        <option value="" disabled selected>Select your year</option>
+                        <option value="freshman">Freshman</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </div>
+                
+                <!-- Textarea -->
+                <div class="form-group full-width">
+                    <label for="goals">Coding Goals:</label>
+                    <textarea id="goals" name="goals" rows="4"
+                              placeholder="What do you hope to achieve in the club?"></textarea>
+                </div>
+                
+                <!-- File Input -->
+                <div class="form-group">
+                    <label for="avatar">Profile Photo (optional):</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/*">
+                </div>
+                
+                <!-- Submit Button -->
+                <div class="form-group full-width">
+                    <button type="submit">Join the Club</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Student Coding Club | Contact: codingclub@school.edu</p>
+        <p>Meeting every Wednesday at 4:00 PM in the Computer Lab</p>
+    </footer>
+</body>
+</html>
